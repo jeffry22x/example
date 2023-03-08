@@ -1,5 +1,5 @@
 <?php 
-//ok lang
+//ok lang change master
 require_once("includes/simpleUrl.php");
 
 $url = new Simpleurl('');
@@ -7,7 +7,7 @@ $url = new Simpleurl('');
 //
 if( !$url->segment(1) ) :
 
-	$page = 'indexxx';
+	$page = 'indexxx change master';
 	//echo $page;
 
 else :
