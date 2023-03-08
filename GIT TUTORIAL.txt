@@ -1,4 +1,36 @@
 1.GO TO THE DIRECTORY OF YOUR PROJECT EXAMPLE 
 	1. folder name PHP TUTORIAL -> SAMPLE1 foldername, doon ka sa php tutorial foldername  mag cmd at mag type ng 'git init', kasi yong laman ng php tutorial na may sample1 yong ang ipupush mo sa github.
 		* pag naka 'git init' kana sa cmd type mo naman ang 'git add .' ang ibig sabihin ng ' .' -> all the files and folder in the particular 'PHP TUTORIAL' folder would be added to the 'staging area' that means the folders have been added now.
-		* next type ulit sa cmd 'git commit' para maka punta ka sa commit message at don mo rin makikita ang mga files ng local directory mo na inadd, tapos pag nasa commit message kana, pwede mo pangalan don sa commit message sa 1st line na kahit ano, example "this is the first commit for the project"
+		* next type ulit sa cmd 'git commit' para maka punta ka sa commit message at don mo rin makikita ang mga files ng local directory mo na inadd, tapos pag nasa commit message kana, pwede mo pangalan don sa commit message sa 1st line na kahit ano, example "this is the first commit for the project" or para mas mabilis direct agad type mo lang sa cmd 'git commit -m "this is the first commit for the project"'
+
+2.'git status' -> TO CHECK IF WHAT BRANCH ARE YOU NOW Type 
+
+3. 'git log'  -> KUNG GUSTO MO MALAMAN KUNG ILAN NA ANG COMMENTS NA NAGAWA AT ANO ANG MGA CHANGES SA COMMENT TYPE 
+
+4. 'git branch feature1' -> TO CREATE NA NEW BRANCH,  yong "feature1" ang name ng branch, pwede mo palitaan kahit ano
+   'git checkout -b feature2' -> another way to create BRANCH AND SWICTH IT TO feature2 branch			->
+
+5. 'git branch' -> KUNG GUSTO MO MALAMAN KONG ILAN ANG BRANCH TYPE 
+
+6. 'git checkout feature1' -> KUNG GUSTO MO IOPEN ANG BRANCH OR SWITCH
+
+7. 'gedit index.html' or 'code index.php' yong code ay vs code -> kung gusto mo iopen ang file, example sa project test1 foldername nandon ang index.html, type mo muna ang cd test1 saka mo itype ang 'gedit index.html' pag 'gedit' is not recognized as an internal or external command, ang gawin jan ay open mo nalang direct sa folder
+
+8. 'git diff' -> para makita mo ang difference kung ano ang nabago sa inedit mo na file katulad ng index.php or html
+
+9. 'git add index.php' -> kung gusto mo na syang ilagay yong binago mo sa local repository mo katulad ng index.php
+			-> pag tapos mong i add kaylangan mo i commit yon, so  type mo 'git commit -m "a commit was added amd also index.php has been change to blablah" '
+
+10. 'git merge feature1' -> first go to master branch then type 'git checkout master' then pag nasa master branch kana pwede mo na i merge  ang feature1 branch to the master branch
+
+11. 'git remote add origin https://github.com/jeffry22x/example.git' -> sometimes what happens is if two three peaope are changing in various branches and they are updating simultaneously in the master branch then a merge conflict will happen, now a merge conflict is resolved manually, so use this
+
+12. 'git stash save 'feature2 change' -> tawag dito stashing is a way of creating check point for non-committed changes so since we have not commited any change here
+
+13 'git stash list' -> if you have number of stashes stored in your temporary location, use this para makita ang list ng stash mo
+	->NGAYON KUNG GUSTO I APPLY ITO SA IBANG BRANCH EXAMPLE feature1 switch branch ka muna type  'git checkout feature1'
+	-> tapos type mo is 'code index.php' yong code ay sa vs code para mag open, yong 'code index.php' equavalent sya sa 'gedit index.php'
+14. 'git stash apply stash@{0}' or 
+'git stash apply stash@{1} -- index.php' -> use this kung gusto mo i apply yong stash@{0} sa index.php ng feature1, yong stash@{0} ay index.php ng feature2 na naka stash  
+
+15. 'git commit -a -m "changing of css of master lang put comment" ' -> ang -a ay add -m ay message meaning isahan nalang ang pag type
