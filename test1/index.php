@@ -1,5 +1,5 @@
 <?php 
-
+//ok lang
 require_once("includes/simpleUrl.php");
 
 $url = new Simpleurl('');
@@ -7,7 +7,7 @@ $url = new Simpleurl('');
 //
 if( !$url->segment(1) ) :
 
-	$page = 'index';
+	$page = 'indexxx';
 	//echo $page;
 
 else :
